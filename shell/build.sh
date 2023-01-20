@@ -17,7 +17,7 @@ usage="Build an iOS Unity application from Git Repository where:
                 |                   |      
    -o           |    Output path    |      Default: ./
                 |                   |     
-   -v           |    Unity Version  |      Default: 2020.3.42f1
+   -uv          |    Unity Version  |      Default: 2020.3.42f1
                 |                   |      
 ----------------|-------------------|------------------------------
 
@@ -32,7 +32,7 @@ OUTPUT=$(pwd)
 UNITY_VERSION=2020.3.42f1
 
 # Get the options
-options=':e:he:g:o:l:v:'
+options=':e:he:g:o:l:uv:'
 while getopts $options option; do
     case $option in
     b | buildDevice) BUILD=${OPTARG} ;;
@@ -44,7 +44,7 @@ while getopts $options option; do
         ;;
     l | logs) LOGS=${OPTARG} ;;
     o | output) OUTPUT=${OPTARG} ;;
-    v | version) VERSION=${OPTARG} ;;
+    uv | version) UNITY_VERSION=${OPTARG} ;;
     esac
 done
 

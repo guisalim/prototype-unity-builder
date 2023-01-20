@@ -4,7 +4,7 @@
 ## Getting Started
 ### Requirements:
 The project requires:
-* [Unity 2020.3.42](unityhub://2020.3.42f1/7ade1201f527) - This code doesn't come with Docker Image, so the proper Unity Editor must be installed through [Unity HUB](https://unity.com/download).
+* **Unity 2020.3.42** - This code doesn't come with Docker Image, so the proper Unity Editor must be installed through [Unity HUB](https://unity.com/download).
 
 ## Installation/Running
 This CLI is build using Shell script (due to a better performance). You should be able to use the CLI it locally by running:

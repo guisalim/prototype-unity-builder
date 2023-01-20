@@ -2,3 +2,6 @@
 
 logs.txt
 *.tar.gz
+
+node_modules/
+dist/
