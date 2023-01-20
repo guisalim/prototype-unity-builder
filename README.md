@@ -1,6 +1,6 @@
 # Unity Builder Prototype - Shell | TypeScript
 ###### By Guilherme Salim.
-
+[github repo](https://github.com/guisalim/prototype-unity-builder)
 ## Getting Started
 ### Requirements:
 The project requires:
@@ -16,6 +16,7 @@ Initially, the code was built only using Shell due to the straightforward goal. 
 
 Both codes have the same pipeline process, so the output should be compatible.
 Within each project, the main coding file contains the required documentation to a first understanding of the code.
+
 ### References
 In order to accomplish the task, it was used the Unity's official documentation for building an application through the CLI - [Unitor Editor CLI official docs](https://docs.unity3d.com/Manual/EditorCommandLineArguments.html)
 
@@ -27,13 +28,13 @@ In order to accomplish the task, it was used the Unity's official documentation 
 
 ### Limitation
 Due to the time constraints to develop this solution, some limitations of these prototypes are:
-- It uses an injected script to perform a custom build based on the arguments provided
-- It supports only Linux and Mac environment
-- It requires that the application contains a single scene `"Assets/Scenes/SampleScene.unity"`, in case of additional or custom scenes, it requires manual changes on `<node|shell>/csScripts/BuildScript.cs:27`
+* It uses an injected script to perform a custom build based on the arguments provided
+* It supports only Linux and Mac environment
+* It requires that the application contains a single scene `"Assets/Scenes/SampleScene.unity"`, in case of additional or custom scenes, it requires manual changes on `<node|shell>/csScripts/BuildScript.cs:27`
 
 ### Next Steps
 Besides working on the limitation listed above, some of the next features/code improvements are:
-* Docker container - run the build pipeline inside a docker container. (Reference: [Game.CI](https://game.ci/docs/docker/customize-docker-images))
+* Docker container - run the build pipeline inside a docker container. (Reference: [Game.CI](https://game.ci/docs/docker/customize-docker-images)). A containerized image can support increase scalability, encapsulation as well as limit the resources used by the process
 * Include support to multiple source control (tfvc, git, etc)
 * [Typescript] Unit tests - add unit tests around each minor function to ensure stability of the code
 
