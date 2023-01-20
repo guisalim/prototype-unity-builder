@@ -15,9 +15,7 @@ The goal of this code is to provide a Unity Build CLI to support iOS and Android
 Initially, the code was built only using Shell due to the straightforward goal. However, it was seen some benefits on using another language such as TypeScript (but could be others as well, such as Ruby, Golang, Node, etc.) to enable a better development experience when adding more features to the pipeline.
 
 Both codes have the same pipeline process, so the output should be compatible.
-
 Within each project, the main coding file contains the required documentation to a first understanding of the code.
-
 ### References
 In order to accomplish the task, it was used the Unity's official documentation for building an application through the CLI - [Unitor Editor CLI official docs](https://docs.unity3d.com/Manual/EditorCommandLineArguments.html)
 
@@ -36,6 +34,7 @@ Due to the time constraints to develop this solution, some limitations of these 
 ### Next Steps
 Besides working on the limitation listed above, some of the next features/code improvements are:
 * Docker container - run the build pipeline inside a docker container. (Reference: [Game.CI](https://game.ci/docs/docker/customize-docker-images))
+* Include support to multiple source control (tfvc, git, etc)
 * [Typescript] Unit tests - add unit tests around each minor function to ensure stability of the code
 
 ### Time Tracking
